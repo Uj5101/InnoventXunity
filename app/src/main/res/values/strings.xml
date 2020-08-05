@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">InnoventX</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="text">
+        <a href="https://instagram.com/_.innoventx._?igshid=jdrqk5nh475l">Instagram Account</a>
+    </string>
+    <string name="text1">
+        <a href="https://www.linkedin.com/company/innoventxofficial">Linkedin Account</a>
+    </string>
+    <string name="text2">
+        <a href="https://www.facebook.com/InnoventX/">Facebook Account</a>
+    </string>
+    <string name="text3">
+        <a href="https://twitter.com/InnoventX?s=08">Twitter Account</a>
+    </string>
+    <string name="text4">
+        <a href="https://instagram.com/_.innoventx._?igshid=jdrqk5nh475l">Website Link</a>
+    </string>
+</resources>

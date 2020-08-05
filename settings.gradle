@@ -1,0 +1,2 @@
+rootProject.name='InnoventX'
+include ':app', ':innoventx-debug'
