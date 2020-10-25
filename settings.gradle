@@ -1,2 +1,6 @@
+include ':app'
 rootProject.name='InnoventX'
-include ':app', ':innoventx-debug'
+
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('E:\\flutterproject\\InnoventX\\unityLibrary')
+

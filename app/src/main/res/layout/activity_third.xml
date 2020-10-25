@@ -10,8 +10,9 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#FCFDFC"
+        android:background="#2C2828"
         android:id="@+id/toolbar3"
+        app:titleTextColor="#fff"
         app:title="BT-Controller"/>
 
 </RelativeLayout>

@@ -7,22 +7,225 @@
     android:id="@+id/drawer"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fffff" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="270dp"
+          android:background="#191818">
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:scaleType="centerCrop"
+              android:src="@drawable/half"
+              android:layout_marginBottom="44dp"
+              android:adjustViewBounds="true"
+              android:id="@+id/innoventx"
+              android:translationZ="7dp" />
+
+          <!--          <de.hdodenhof.circleimageview.CircleImageView-->
+<!--              android:layout_width="130dp"-->
+<!--              android:layout_height="130dp"-->
+<!--              android:layout_marginTop="?actionBarSize"-->
+<!--              android:layout_centerHorizontal="true"-->
+<!--              android:src="@drawable/in" />-->
+
+      </RelativeLayout>
 
     </RelativeLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="17dp"
+            android:layout_height="71dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:id="@+id/arduino"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:backgroundTintMode="screen"
+            app:cardBackgroundColor="#564F4F"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgardui"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Arduino"
+                    android:id="@+id/textarduino"
+                    android:textAlignment="center"
+                    android:textColor="#78909C"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:id="@+id/bluetooth"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:backgroundTintMode="screen"
+            app:cardBackgroundColor="#564F4F"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgbluetooth"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_baseline_bluetooth_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bluetooth"
+                    android:id="@+id/textbluetooth"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#78909C"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arvr"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:backgroundTintMode="screen"
+            app:cardBackgroundColor="#564F4F"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imgArvr"
+                    android:src="@drawable/aug"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AR_VR"
+                    android:id="@+id/textArvr"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#78909C"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/contactus"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:backgroundTintMode="screen"
+            app:cardBackgroundColor="#564F4F"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imgcontact"
+                    android:src="@drawable/ic_contactpurple" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Contact Us"
+                    android:id="@+id/textContact"
+                    android:textAlignment="center"
+                    android:textColor="#78909C"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
 
     <include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/toolbar"/>
+        layout="@layout/headerhome"/>
 
     <include
         android:layout_width="match_parent"
@@ -36,8 +239,29 @@
         app:menu="@menu/menu_bar"
         app:headerLayout="@layout/header_file"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
+        android:fitsSystemWindows="true">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stats"
+                android:layout_marginBottom="-20dp"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mask"
+                android:layout_marginBottom="-20dp"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

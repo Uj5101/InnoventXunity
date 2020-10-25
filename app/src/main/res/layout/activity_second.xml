@@ -6,24 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".second">
 
-
-    <androidx.appcompat.widget.Toolbar
+    <include
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#FCFDFC"
-        android:id="@+id/toolbar2"
-        app:title="About us"/>
+        android:layout_height="wrap_content"
+        layout="@layout/contain_main"/>
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/btnavigation"
+    <include
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:background="#fff"
-        android:elevation="20dp"
-        android:visibility="visible"
-        app:menu="@menu/menubtv"
-        tools:visibility="visible" />
+        android:layout_height="wrap_content"
+        layout="@layout/headeraboutus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="ABOUT US"
+        android:textSize="25sp"
+        android:id="@+id/textAboutUs"
+        android:textColor="#707070"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textAboutUs"
+        android:background="#707070"
+        android:id="@+id/layout1"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="470dp"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/stroke" >
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="9dp"
+            android:text="InnoventX is a venture that is aimed at providing Robotics and IoT technology education to the young minds of schools and colleges by developing effectual learning platforms for better understanding of the underlying concepts of the subject. We are developing Robotics Kits for the students as well as we provide training workshops, LIVE coding and training webinars, technological awareness sessions and all that we can do for upbringing of the better future tech geeks."
+            android:textSize="24sp"
+            android:textColor="#707070"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="10dp"
+        android:text="INNOVENTX"
+        android:textSize="20sp"
+        android:id="@+id/textInnoventx"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"/>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textInnoventx"
+        android:background="#707070"
+        android:id="@+id/layout3"
+        android:layout_marginTop="5dp" />
+    
+    <ImageView
+        android:layout_width="24.83dp"
+        android:layout_height="24.83dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/layout3"
+        android:layout_marginLeft="95dp"
+        android:id="@+id/instagram"
+        android:src="@drawable/ta"/>
+
+    <ImageView
+        android:layout_width="24.83dp"
+        android:layout_height="24.83dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/layout3"
+        android:layout_toRightOf="@id/instagram"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/facebook"
+        android:src="@drawable/fac"/>
+
+    <ImageView
+        android:layout_width="24.83dp"
+        android:layout_height="24.83dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/layout3"
+        android:layout_toRightOf="@id/facebook"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/linkedin"
+        android:src="@drawable/ined"/>
+
+    <ImageView
+        android:layout_width="24.83dp"
+        android:layout_height="24.83dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/layout3"
+        android:layout_toRightOf="@id/linkedin"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/whatsup"
+        android:src="@drawable/wapp"/>
+
+    <ImageView
+        android:layout_width="24.83dp"
+        android:layout_height="24.83dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/layout3"
+        android:layout_toRightOf="@id/whatsup"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/email"
+        android:src="@drawable/ic_baseline_email_24"/>
+
+    <ImageView
+        android:layout_width="24.83dp"
+        android:layout_height="24.83dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/layout3"
+        android:layout_toRightOf="@id/email"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#707070"
+        android:id="@+id/twitter"
+        android:src="@drawable/twitter1"/>
 
 </RelativeLayout>

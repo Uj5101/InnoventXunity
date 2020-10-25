@@ -3,27 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.innoventx">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:replace="android:theme, android:icon"
-        android:theme="@style/AppTheme">
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC4k31aH0UedvhyFXmYNYoHFc9_TWYbKpI"/>
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme, android:icon">
+        <activity android:name=".Arduino"></activity>
 
         <activity android:name=".map" />
         <activity android:name=".bt2" />
+
         <activity android:name=".bt1" />
         <activity android:name=".fourth" />
         <activity android:name=".third" />
@@ -42,11 +34,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC4k31aH0UedvhyFXmYNYoHFc9_TWYbKpI" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
